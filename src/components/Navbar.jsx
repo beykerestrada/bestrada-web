@@ -10,7 +10,7 @@ const Navbar = () => {
   const [active, setActive] = useState("/")
   const [toggle, setToggle] = useState(false)
   return (
-    <div className='w-full mx-auto px-6 flex justify-center items-center py-5'>
+    <div className='w-full z-50 mx-auto px-6 flex justify-center items-center py-5'>
       <nav className='w-full max-w-5xl flex justify-between items-center h-full'>
         <div className='flex items-center justify-start h-full'>
           <Link to={'/'} >
@@ -48,7 +48,7 @@ const Navbar = () => {
 
 
         {/* Menu responsive */}
-        <div className="md:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden z-50 flex flex-1 justify-end items-center">
           <div className=" h-full flex items-center justify-center">
             {
               toggle ?
@@ -61,7 +61,7 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)} />
             }
           </div>
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6  absolute black-gradient  top-20 right-0 mx-4 my-2 min-w-[240px]  bg-blue-dark opacity-90  z-10 rounded-xl items-center`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6  absolute black-gradient  top-20 right-0 mx-4 my-2 min-w-[240px]  bg-blue-dark   z-50 rounded-xl items-center`}>
 
             <ul className='list-none  flex flex-col gap-4  items-center text-[16px] h-full w-full'
             >
