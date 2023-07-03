@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Fira+Code:wght@300;400;600&family=Inconsolata:wght@700;800;900&family=JetBrains+Mono:wght@300;400;700&family=M+PLUS+1+Code:wght@600&family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #fafafa, #fff);
+}
