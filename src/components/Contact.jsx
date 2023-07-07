@@ -60,7 +60,7 @@ const Contact = () => {
       <h2 className='text-5xl font-heading text-blue-darker  mb-10'>Contacto.</h2>
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          //onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-4 w-full'
           netlify='true'
         >
