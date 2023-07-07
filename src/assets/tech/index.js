@@ -9,6 +9,8 @@ import vite from './vite.svg'
 import wordpress from './wordpress.svg'
 import bootstrap from './bootstrap.svg'
 import firebase from './firebase.svg'
+import github_white from './github_white.svg'
+import web from './web.png'
 
 
 export {
@@ -22,5 +24,7 @@ export {
     vite,
     wordpress,
     bootstrap,
-    firebase
+    firebase,
+    github_white,
+    web
 }

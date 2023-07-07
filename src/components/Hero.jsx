@@ -15,7 +15,7 @@ const Hero = () => {
     <div className='bg-gray-light -z-50'>
       <section className='w-full  flex flex-col relative bg-gradient-to-r from-[#fafafa] to-[white] rounded-br-[30%] overflow-hidden'>
         <Navbar />
-        <div className='w-full   max-w-5xl mx-auto px-5 xl:px-0 flex flex-col sm:flex-row sm:flex-wrap justify-between py-5 mt-5'>
+        <div className='w-full   max-w-5xl mx-auto px-10 xl:px-0 flex flex-col sm:flex-row sm:flex-wrap justify-between py-5 mt-5'>
           <div className=' z-20 flex  flex-col justify-center items-start gap-10 md:w-[60%] mb-10'>
             <h2 className='text-3xl lg:text-6xl font-heading text-blue-dark'>{heading}</h2>
             <h1 className='text-2xl lg:text-3xl font-sub_heading text-orange-dark'>

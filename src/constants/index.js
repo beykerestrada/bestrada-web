@@ -9,8 +9,15 @@ import {
     vite,
     wordpress,
     bootstrap,
-    firebase
+    firebase,
+    web
 } from '../assets/tech'
+
+import {
+    martial_geeks,
+    exchange,
+    sagaIdiomas
+} from '../assets/projects'
 
 const heroDescription = [
     {
@@ -35,6 +42,29 @@ const navLinks = [
         title: "Contacto",
     }
 ]
+
+const services = [
+    {
+        title: "Desarrollo Web",
+        icon: web,
+    },
+    {
+        title: "Mantenimiento",
+        icon: web,
+    },
+    {
+        title: "Optimización",
+        icon: web,
+    },
+    {
+        title: "Actualizaciónes",
+        icon: web,
+    },
+    {
+        title: "SEO Básico",
+        icon: web,
+    },
+];
 
 const technologies = [
     {
@@ -85,8 +115,84 @@ const technologies = [
     },
 ]
 
+const projects = [
+    {
+        name: "SagaIdiomas",
+        description:
+            "Sitio Web estático informativo para una escuela de aprendizaje de idiomas online.",
+        tags: [
+            {
+                name: "HTML",
+                color: "text-orange-dark",
+            },
+            {
+                name: "SCSS",
+                color: "text-blue-light",
+            },
+            {
+                name: "Bootstrap",
+                color: "text-blue-light",
+            },
+        ],
+        image: sagaIdiomas,
+        deploy_link: "https://beykerestrada.github.io/sagaidiomas-coderhouse/",
+        source_code_link: "https://github.com/beykerestrada/sagaidiomas-coderhouse",
+    },
+    {
+        name: "Exchange Crypto",
+        description:
+            "Simulador de un exchange de criptomonedas donde el usuario puede realizar distintas acciones como abonar, comprar, vender, retirar y ver su historial de transacciones y las variaciones de precio de las diferentes criptomonedas.",
+        tags: [
+            {
+                name: "HTML",
+                color: "text-orange-darker",
+            },
+            {
+                name: "CSS",
+                color: "text-blue-light",
+            },
+            {
+                name: "JavaScript",
+                color: "text-yellow-dark",
+            },
+        ],
+        image: exchange,
+        source_code_link: "https://github.com/beykerestrada/Simulador-ExchangeCripto",
+        deploy_link: "https://beykerestrada.github.io/Simulador-ExchangeCripto/"
+    },
+    {
+        name: "Martial Geeks",
+        description:
+            "Sitio Web E-commerce para tienda de artículos de artes marciales. Con registro de usuario, carrito persistente y se simula el flujo de compra del usuario",
+        tags: [
+            {
+                name: "React",
+                color: "text-blue-light",
+            },
+            {
+                name: "SCSS",
+                color: "text-orange-darker",
+            },
+            {
+                name: "JavaScript",
+                color: "text-blue-light",
+            },
+            {
+                name: "Firebase",
+                color: "text-yellow-dark",
+            },
+        ],
+        image: martial_geeks,
+        source_code_link: "https://github.com/beykerestrada/martial-geeks",
+        deploy_link: "https://martialgeeks.netlify.app/"
+    },
+];
+
+
 export {
     heroDescription,
     navLinks,
-    technologies
+    technologies,
+    projects,
+    services
 }

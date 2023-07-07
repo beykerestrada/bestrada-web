@@ -10,7 +10,7 @@ const Navbar = () => {
   const [active, setActive] = useState("/")
   const [toggle, setToggle] = useState(false)
   return (
-    <div className='w-full z-50 mx-auto px-6 flex justify-center items-center py-5'>
+    <div className='w-full z-50 mx-auto px-10 flex justify-center items-center py-5'>
       <nav className='w-full max-w-5xl flex justify-between items-center h-full'>
         <div className='flex items-center justify-start h-full'>
           <Link to={'/'} >
