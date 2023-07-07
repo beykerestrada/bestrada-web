@@ -61,6 +61,7 @@ const Contact = () => {
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-4 w-full'
+          netlify='true'
         >
           <label className='flex flex-col'>
             <span className='text-gray-darker font-special font-medium mb-4'>Tu nombre</span>
