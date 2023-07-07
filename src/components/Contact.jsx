@@ -20,8 +20,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
+    setLoading(false)
 
-    emailjs.send(
+    {/*emailjs.send(
       'service_gny2tdf',
       'template_sij2aum',
       {
@@ -48,7 +49,7 @@ const Contact = () => {
         console.log(error)
 
         alert('Ha ocurrido un error.')
-      })
+      })*/}
   }
 
   return (
