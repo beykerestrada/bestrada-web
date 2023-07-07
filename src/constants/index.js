@@ -57,7 +57,7 @@ const services = [
         icon: web,
     },
     {
-        title: "Actualizaciónes",
+        title: "Actualizaciones",
         icon: web,
     },
     {

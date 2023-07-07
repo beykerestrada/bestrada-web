@@ -5,7 +5,7 @@ import { github_white } from '../assets/tech'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deploy_link }) => {
   return (
-    <div className='bg-[#192a3ada] shadow-xl p-5 rounded-2xl sm:w-[360px] w-full'>
+    <div className='bg-[#192a3ada] shadow-2xl p-5 rounded-2xl sm:w-[360px] w-full'>
       <div className='relative w-full  h-[230px]'>
         <img
           src={image}

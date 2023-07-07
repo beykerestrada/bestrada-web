@@ -36,7 +36,7 @@ const Contact = () => {
     )
       .then(() => {
         setLoading(false)
-        alert('Thank you for your message. I will get back to you as soon as possible.')
+        alert('Gracias por tu mensaje. Te responderé en breve.')
 
         setForm({
           name: '',
@@ -47,13 +47,13 @@ const Contact = () => {
         setLoading(false)
         console.log(error)
 
-        alert('Something went wrong.')
+        alert('Ha ocurrido un error.')
       })
   }
 
   return (
     <div className='w-full max-w-5xl mx-auto py-20 px-10 xl:px-0'>
-      <div className='bg-gray-light border border-gray-darker  w-full md:w-[50%] rounded-2xl p-10 shadow-xl'>
+      <div className='bg-gray-light   w-full md:w-[50%] rounded-2xl p-10 shadow-xl'>
       <span id='contact'></span>
       <p className='text-md uppercase font-sub_heading font-black text-orange-light '>Hablemos</p>
       <h2 className='text-5xl font-heading text-blue-darker  mb-10'>Contacto.</h2>
