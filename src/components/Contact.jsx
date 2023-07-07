@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import sgMail from '@sendgrid/mail';
 
 const Contact = () => {
 
@@ -20,49 +21,37 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
-    setLoading(false)
 
-    {/*emailjs.send(
-      'service_gny2tdf',
-      'template_sij2aum',
-      {
-        from_name: form.name,
-        to_name: 'Beyker',
-        from_email: form.email,
-        reply_to: form.email,
-        to_email: 'bestrada.web@gmail.com',
-        message: form.message
-      },
-      'vCnvAYVomSFLoOFgM'
-    )
+
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+    const msg = {
+      to: 'bestrada.web@gmail.com', // Change to your recipient
+      from: form.email, // Change to your verified sender
+      subject: 'Nuevo mensaje en beykerestrada.com',
+      text: `Nombre: ${form.name}\nEmail: ${form.email}\nMensaje: ${form.message}`,
+      html: '<strong>Nuevo mensaje en beykerestrada.com</strong>',
+    }
+    sgMail
+      .send(msg)
       .then(() => {
-        setLoading(false)
-        alert('Gracias por tu mensaje. Te responderé en breve.')
-
-        setForm({
-          name: '',
-          email: '',
-          message: ''
-        })
-      }, (error) => {
-        setLoading(false)
-        console.log(error)
-
-        alert('Ha ocurrido un error.')
-      })*/}
+        console.log('Email sent')
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+      setLoading(false)
   }
 
   return (
     <div className='w-full max-w-5xl mx-auto py-20 px-10 xl:px-0'>
-      <div className='bg-gray-light   w-full md:w-[50%] rounded-2xl p-10 shadow-xl'>
-      <span id='contact'></span>
-      <p className='text-md uppercase font-sub_heading font-black text-orange-light '>Hablemos</p>
-      <h2 className='text-5xl font-heading text-blue-darker  mb-10'>Contacto.</h2>
+      <div className='bg-gray-light border border-gray-darker  w-full md:w-[50%] rounded-2xl p-10 shadow-xl'>
+        <span id='contact'></span>
+        <p className='text-md uppercase font-sub_heading font-black text-orange-light '>Hablemos</p>
+        <h2 className='text-5xl font-heading text-blue-darker  mb-10'>Contacto.</h2>
         <form
           ref={formRef}
-          //onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-4 w-full'
-          netlify='true'
         >
           <label className='flex flex-col'>
             <span className='text-gray-darker font-special font-medium mb-4'>Tu nombre</span>
