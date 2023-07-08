@@ -5,7 +5,7 @@ import { github_white } from '../assets/tech'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deploy_link }) => {
   return (
-    <div className='bg-[#192a3ada] shadow-2xl p-5 rounded-2xl sm:w-[360px] w-full'>
+    <div className='bg-[#192a3ada] shadow-2xl p-5 rounded-2xl sm:w-[360px] w-full hover:-translate-y-1 hover:scale-105 transition-all duration-300'>
       <div className='relative w-full  h-[230px]'>
         <img
           src={image}
@@ -51,7 +51,7 @@ const Portfolio = () => {
         A continuación podrás ver algunos de mis proyectos. Con los cuales he podido practicar con diferentes tecnologías y mejorar progresivamente mis habilidades y mi lógica de programación; así como agregar herramientas a mi stack de desarrollo. 
       </p>
 
-      <div className='mt-20 flex flex-wrap justify-evenly gap-7'>
+      <div className='mt-20 flex flex-wrap justify-evenly gap-10'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`}
           index={index}

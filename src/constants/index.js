@@ -10,7 +10,8 @@ import {
     wordpress,
     bootstrap,
     firebase,
-    web
+    web,
+    zapier
 } from '../assets/tech'
 
 import {
@@ -18,6 +19,14 @@ import {
     exchange,
     sagaIdiomas
 } from '../assets/projects'
+
+import {
+    web_dev,
+    maintenance,
+    optimization,
+    SEO,
+    update,
+} from '../assets/services'
 
 const heroDescription = [
     {
@@ -46,23 +55,23 @@ const navLinks = [
 const services = [
     {
         title: "Desarrollo Web",
-        icon: web,
+        icon: web_dev,
     },
     {
         title: "Mantenimiento",
-        icon: web,
+        icon: maintenance,
     },
     {
         title: "Optimización",
-        icon: web,
+        icon: optimization,
     },
     {
         title: "Actualizaciones",
-        icon: web,
+        icon: update,
     },
     {
         title: "SEO Básico",
-        icon: web,
+        icon: SEO,
     },
 ];
 
@@ -76,11 +85,11 @@ const technologies = [
         icon: css,
     },
     {
-        name: "bootstrap",
+        name: "Bootstrap",
         icon: bootstrap,
     },
     {
-        name: "Tailwind CSS",
+        name: "Tailwind",
         icon: tailwind,
     },
     {
@@ -94,24 +103,28 @@ const technologies = [
     
     {
         
-        name: "vite",
+        name: "Vite",
         icon: vite,
     },
     {
-        name: "git",
+        name: "Git",
         icon: git,
     },
     {
-        name: "github",
+        name: "Github",
         icon: github,
     },
     {
-        name: "firebase",
+        name: "Firebase",
         icon: firebase,
     },
     {
-        name: "wordpress",
+        name: "Wordpress",
         icon: wordpress,
+    },
+    {
+        name: "Zapier",
+        icon: zapier,
     },
 ]
 

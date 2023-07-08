@@ -11,6 +11,7 @@ import bootstrap from './bootstrap.svg'
 import firebase from './firebase.svg'
 import github_white from './github_white.svg'
 import web from './web.png'
+import zapier from './zapier.svg'
 
 
 export {
@@ -26,5 +27,6 @@ export {
     bootstrap,
     firebase,
     github_white,
-    web
+    web,
+    zapier
 }
