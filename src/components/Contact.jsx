@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import sgMail from '@sendgrid/mail';
+import sendMail from '../helpers/sendMail';
 
 const Contact = () => {
 
@@ -20,26 +20,16 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    const subject = 'Nuevo mensaje en beykerestrada.com'
+    const text = `Nombre: ${form.name}\nEmail: ${form.email}\nMensaje: ${form.message}`
+    const html = `Nombre: ${form.name}\nEmail: ${form.email}\nMensaje: ${form.message}`
+
     setLoading(true)
 
+    sendMail(subject, text, html)
 
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-    const msg = {
-      to: 'bestrada.web@gmail.com', // Change to your recipient
-      from: form.email, // Change to your verified sender
-      subject: 'Nuevo mensaje en beykerestrada.com',
-      text: `Nombre: ${form.name}\nEmail: ${form.email}\nMensaje: ${form.message}`,
-      html: '<strong>Nuevo mensaje en beykerestrada.com</strong>',
-    }
-    sgMail
-      .send(msg)
-      .then(() => {
-        console.log('Email sent')
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-      setLoading(false)
+    setLoading(false)
   }
 
   return (
