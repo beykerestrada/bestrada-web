@@ -1,20 +1,27 @@
-import { Hero, Tech, About, Portfolio, Contact, Services, Interests, Footer } from './components'
+import { Hero, Tech, About, Portfolio, Contact, Thankyou, Interests, Footer } from './components'
 
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
 
 
   return (
     <BrowserRouter>
-      <Hero/>
-      <Tech/>
-      <About/>
-      <Portfolio/>
-      <Interests/>
-      <Contact/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Hero />
+            <Tech />
+            <About />
+            <Portfolio />
+            <Interests />
+            <Contact />
+          </>
+        } />
+        <Route path='/thankyou' element={<Thankyou />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

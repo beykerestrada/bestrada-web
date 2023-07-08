@@ -1,72 +1,28 @@
-import React, { useState, useRef } from 'react'
-import sgMail from '@sendgrid/mail'
+
 
 const Contact = () => {
 
-  const formRef = useRef()
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-
-    setForm({ ...form, [name]: value })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    const subject = `Nuevo mensaje de ${form.name}`
-    const text = `Nombre: ${form.name}\nEmail: ${form.email}\nMensaje: ${form.message}`
-    const html = `Nombre: ${form.name}\nEmail: ${form.email}\nMensaje: ${form.message}`
-
-    setLoading(true)
-
-    
-    sgMail.setApiKey('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')
-    const msg = {
-      to: 'test@example.com', // Change to your recipient
-      from: 'contacto@beykerestrada.com', // Change to your verified sender
-      subject: subject,
-      text: text,
-      html: html,
-    }
-    sgMail
-      .send(msg)
-      .then(() => {
-        console.log('Mensaje enviado')
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-
-    setLoading(false)
-  }
-
   return (
     <div className='w-full max-w-5xl mx-auto py-20 px-10 xl:px-0 flex justify-center items-center relative'>
-      <div className='bg-gray-light border border-gray-darker  w-full md:w-[50%] rounded-2xl p-10 shadow-xl'>
+      <div className='bg-gray-light border border-gray-darker  w-full md:w-[50%] rounded-2xl p-5 shadow-xl'>
         <span id='contact'></span>
         <p className='text-md uppercase font-sub_heading font-black text-orange-light '>Hablemos</p>
         <h2 className='text-5xl font-heading text-blue-darker  mb-10'>Contacto.</h2>
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
+        <form          
           className='mt-12 flex flex-col gap-4 w-full'
+          action="https://formsubmit.co/contacto@beykerestrada.com" 
+          method="POST"
         >
+          <input type="hidden" name="_subject" value={'Nuevo mensaje en beykerestrada.com'} />
+          <input type="hidden" name="_next" value={'http://beykerestrada.com/thankyou'} />
+          <input type="hidden" name="_captcha" value="false"></input>
           <label className='flex flex-col'>
             <span className='text-gray-darker font-special font-medium mb-4'>Tu nombre</span>
             <input
               type="text"
               name='name'
-              value={form.name}
-              onChange={handleChange}
               placeholder="¿Cómo te llamas?"
+              required
               className='bg-[white] font-body py-4 px-6 placeholder:text-secondary text-gray-darker rounded-lg outlined-none border-none font-medium'
             />
           </label>
@@ -75,9 +31,8 @@ const Contact = () => {
             <input
               type="email"
               name='email'
-              value={form.email}
-              onChange={handleChange}
               placeholder="¿Cuál es tu correo?"
+              required
               className='bg-[white] font-body py-4 px-6 placeholder:text-secondary text-gray-darker rounded-lg outlined-none border-none font-medium'
             />
           </label>
@@ -86,17 +41,16 @@ const Contact = () => {
             <textarea
               rows={'7'}
               name='message'
-              value={form.message}
-              onChange={handleChange}
               placeholder="¿Qué me quieres consultar?"
+              required
               className='bg-[white] font-body py-4 px-6 placeholder:text-secondary text-gray-darker rounded-lg outlined-none border-none font-medium'
             />
           </label>
           <button
             type='submit'
-            className='bg-blue-darker py-3 px-8 outline-none w-fit text-gray-light font-special font-bold shadow-md shadow-primary rounded-xl'
+            className='bg-blue-darker py-3 px-8 outline-none w-fit text-gray-light font-special self-end font-bold shadow-md shadow-primary rounded-xl'
           >
-            {loading ? 'Enviando...' : 'Enviar'}
+            Enviar
           </button>
         </form>
       </div>

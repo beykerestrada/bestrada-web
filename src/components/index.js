@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Services from "./Services";
 import Interests from "./Interests";
+import Thankyou from "./Thankyou";
 
 export {
     Navbar,
@@ -17,5 +18,6 @@ export {
     Contact,
     Footer,
     Services,
-    Interests
+    Interests,
+    Thankyou
 }
