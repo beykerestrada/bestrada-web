@@ -1,4 +1,4 @@
-import { Hero, Tech, About, Portfolio, Contact, Thankyou, Interests, Footer } from './components'
+import { Hero, Tech, About, Portfolio, Contact, Interests, Footer } from './components'
 
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -19,7 +19,6 @@ function App() {
             <Contact />
           </>
         } />
-        <Route path='/thankyou' element={<Thankyou />} />
       </Routes>
       <Footer />
     </BrowserRouter>

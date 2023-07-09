@@ -14,7 +14,7 @@ const Contact = () => {
           method="POST"
         >
           <input type="hidden" name="_subject" value={'Nuevo mensaje en beykerestrada.com'} />
-          <input type="hidden" name="_next" value={'http://beykerestrada.com/thankyou'} />
+          <input type="hidden" name="_next" value={'https://beykerestrada.com/thankyou.html'} />
           <input type="hidden" name="_captcha" value="false"></input>
           <label className='flex flex-col'>
             <span className='text-gray-darker font-special font-medium mb-4'>Tu nombre</span>
