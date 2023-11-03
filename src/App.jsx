@@ -1,4 +1,4 @@
-import { Hero, Tech, About, Portfolio, Contact, Interests, Footer } from './components'
+import { Hero, Tech, About, Portfolio, Contact, Interests, Footer, GoToTop } from './components'
 
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -17,6 +17,7 @@ function App() {
             <Portfolio />
             <Interests />
             <Contact />
+            <GoToTop />
           </>
         } />
       </Routes>
