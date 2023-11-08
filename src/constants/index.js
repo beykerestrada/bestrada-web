@@ -17,7 +17,8 @@ import {
 import {
     martial_geeks,
     exchange,
-    sagaIdiomas
+    sagaIdiomas, 
+    pastorino
 } from '../assets/projects'
 
 import {
@@ -130,6 +131,31 @@ const technologies = [
 
 const projects = [
     {
+        name: "Estudio Jurídico Pastorino",
+        description:
+            "Sitio web informativo para estudio jurídico con base en Buenos Aires, Agentina.",
+        tags: [
+            {
+                name: "React",
+                color: "text-blue-light",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "text-orange-darker",
+            },
+            {
+                name: "JavaScript",
+                color: "text-blue-light",
+            },
+            {
+                name: "Vite",
+                color: "text-yellow-dark",
+            },
+        ],
+        image: pastorino,
+        deploy_link: "https://pastorino.netlify.app/"
+    },
+    {
         name: "SagaIdiomas",
         description:
             "Sitio Web estático informativo para una escuela de aprendizaje de idiomas online.",
@@ -199,6 +225,7 @@ const projects = [
         source_code_link: "https://github.com/beykerestrada/martial-geeks",
         deploy_link: "https://martialgeeks.netlify.app/"
     },
+
 ];
 
 

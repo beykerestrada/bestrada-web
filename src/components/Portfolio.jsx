@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { projects } from '../constants'
-import { github_white } from '../assets/tech'
+import { github_white, link } from '../assets/tech'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, deploy_link }) => {
   return (
@@ -13,8 +13,19 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           className='w-full h-full object-cover rounded-2xl'
         />
 
-        <div className='absolute inset-0 flex justify-end m-3 card-img_hove'>
+        <div className='absolute inset-0 flex justify-end m-2 gap-1 card-img_hove'>
           <div
+            onClick={() => window.open(deploy_link, "_blank")}
+            className='bg-gradient-to-r from-[#000] to-gray-darker w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+          >
+            <img
+              src={link}
+              alt={link}
+              className='w-1/2 h-1/2 object-contain '
+            />
+          </div>
+          {source_code_link && (
+            <div
             onClick={() => window.open(source_code_link, "_blank")}
             className='bg-gradient-to-r from-[#000] to-gray-darker w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
           >
@@ -24,6 +35,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
               className='w-1/2 h-1/2 object-contain '
             />
           </div>
+          )}
         </div>
       </div>
       <div className='mt-5'>

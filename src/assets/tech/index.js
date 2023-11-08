@@ -12,6 +12,7 @@ import firebase from './firebase.svg'
 import github_white from './github_white.svg'
 import web from './web.png'
 import zapier from './zapier.svg'
+import link from './link.svg'
 
 
 export {
@@ -28,5 +29,6 @@ export {
     firebase,
     github_white,
     web,
-    zapier
+    zapier,
+    link
 }
