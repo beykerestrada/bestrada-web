@@ -31,7 +31,7 @@ const GoToTop = () => {
       >
         <HiOutlineArrowCircleUp
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className='w-10 h-10'
+          className='w-10 h-10 text-orange-darker hover:text-orange-light'
         />
       </div>
     </div>

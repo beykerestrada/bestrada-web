@@ -16,8 +16,8 @@ const Services = () => {
     return (
         <div className='w-full max-w-5xl mx-auto py-10  '>
             <span id=''></span>
-            <p className='text-md uppercase opacity-60 font-sub_heading font-black text-orange-light '>Que hago</p>
-            <h2 className='text-5xl opacity-90 font-heading text-blue-darker  mb-10'>Servicios.</h2>
+            <p className='text-md uppercase opacity-60 font-sub_heading font-black text-orange-light '>What I do</p>
+            <h2 className='text-5xl opacity-90 font-heading text-blue-darker  mb-10'>Services.</h2>
 
             <div className='mt-20 flex flex-wrap gap-7 justify-evenly '>
                 {services.map((service, index) => (

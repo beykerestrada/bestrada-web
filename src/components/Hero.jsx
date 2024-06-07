@@ -23,9 +23,11 @@ const Hero = () => {
               <br />
               <span>{subHeading2}</span>
             </h1>
-            < a href="#portfolio" className='font-special  sm:text-xl bg-blue-dark px-5 py-2 sm:px-10 md:py-2 w-[180px] sm:w-60 text-gray-light rounded-lg hover:opacity-90 hover:shadow-lg text-center'>
+            <div>
+            < a href="#portfolio" className='font-special  sm:text-lg bg-blue-dark px-5 py-2 sm:px-10 md:py-2 w-[180px] sm:w-60 text-gray-light rounded-lg hover:opacity-90 hover:shadow-lg text-center'>
               {buttonText}
             </a>
+            </div>
           </div>
           <div className='w-full md:w-[40%] flex justify-center relative'>
             <div className='absolute  w-[350px] h-[350px] top-20 right-40 bg-gradient-to-br from-blue-light to-gray-light  shadow-2xl rounded-full  motion-safe:animate-pulse'></div>

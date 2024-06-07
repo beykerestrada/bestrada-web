@@ -26,15 +26,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           </div>
           {source_code_link && (
             <div
-            onClick={() => window.open(source_code_link, "_blank")}
-            className='bg-gradient-to-r from-[#000] to-gray-darker w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-          >
-            <img
-              src={github_white}
-              alt={github_white}
-              className='w-1/2 h-1/2 object-contain '
-            />
-          </div>
+              onClick={() => window.open(source_code_link, "_blank")}
+              className='bg-gradient-to-r from-[#000] to-gray-darker w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={github_white}
+                alt={github_white}
+                className='w-1/2 h-1/2 object-contain '
+              />
+            </div>
           )}
         </div>
       </div>
@@ -56,18 +56,18 @@ const Portfolio = () => {
   return (
     <div className='w-full max-w-5xl py-20 px-10 mx-auto xl:px-0'>
       <span id='portfolio'></span>
-       <p className='text-md uppercase font-black font-sub_heading text-orange-light opacity-60'>Mi trabajo</p>
-      <h2 className='text-5xl font-heading text-blue-dark opacity-90  mb-10'>Proyectos</h2>
+      <p className='text-md uppercase font-black font-sub_heading text-orange-light opacity-60'>My work</p>
+      <h2 className='text-5xl font-heading text-blue-dark opacity-90  mb-10'>Proyects</h2>
 
       <p className='text-lg text-gray-darker font-body'>
-        A continuación podrás ver algunos de mis proyectos. Con los cuales he podido practicar con diferentes tecnologías y mejorar progresivamente mis habilidades y mi lógica de programación; así como agregar herramientas a mi stack de desarrollo. 
+        Here you can see some of my projects. Through these, I have had the opportunity to practice with different technologies, progressively improve my skills and programming logic, and add tools to my development stack.
       </p>
 
       <div className='mt-20 flex flex-wrap justify-evenly gap-10'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`}
-          index={index}
-          {...project}/>
+            index={index}
+            {...project} />
         ))}
       </div>
     </div>

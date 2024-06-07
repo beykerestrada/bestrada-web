@@ -31,47 +31,47 @@ import {
 
 const heroDescription = [
     {
-        heading: "Dejando mi marca en la Internet, un proyecto a la vez.",
-        subHeading1: "Soy Beyker Estrada.",
-        subHeading2: "Desarrollador Web Frontend",
-        buttonText: "Ver proyectos",
+        heading: "Crafting Digital Masterpieces, One Project at a Time",
+        subHeading1: "I'm Beyker Estrada",
+        subHeading2: "a Frontend Web Developer...",
+        buttonText: "Check out my projects",
     }
 ]
 
 const navLinks = [
     {
         id: "about",
-        title: "AcercaDe",
+        title: "About",
     },
     {
         id: "portfolio",
-        title: "Proyectos",
+        title: "Proyects",
     },
     {
         id: "contact",
-        title: "Contacto",
+        title: "Contact",
     }
 ]
 
 const services = [
     {
-        title: "Desarrollo Web",
+        title: "Web Development",
         icon: web_dev,
     },
     {
-        title: "Mantenimiento",
+        title: "Maintenance",
         icon: maintenance,
     },
     {
-        title: "Optimización",
+        title: "Optimization",
         icon: optimization,
     },
     {
-        title: "Actualizaciones",
+        title: "Updates",
         icon: update,
     },
     {
-        title: "SEO Básico",
+        title: "Basic SEO",
         icon: SEO,
     },
 ];
@@ -131,9 +131,9 @@ const technologies = [
 
 const projects = [
     {
-        name: "Estudio Jurídico Pastorino",
+        name: "Pastorino Law Firm",
         description:
-            "Sitio web informativo para estudio jurídico con base en Buenos Aires, Agentina.",
+            "Informational website for a law firm based in Buenos Aires, Argentina.",
         tags: [
             {
                 name: "React",
@@ -158,7 +158,7 @@ const projects = [
     {
         name: "SagaIdiomas",
         description:
-            "Sitio Web estático informativo para una escuela de aprendizaje de idiomas online.",
+            "Static informational website for an online language learning school.",
         tags: [
             {
                 name: "HTML",
@@ -178,9 +178,9 @@ const projects = [
         source_code_link: "https://github.com/beykerestrada/sagaidiomas-coderhouse",
     },
     {
-        name: "Exchange Crypto",
+        name: "Crypto Exchange",
         description:
-            "Simulador de un exchange de criptomonedas donde el usuario puede realizar distintas acciones como abonar, comprar, vender, retirar y ver su historial de transacciones y las variaciones de precio de las diferentes criptomonedas.",
+            "Cryptocurrency exchange simulator where users can perform various actions such as depositing, buying, selling, withdrawing, and viewing their transaction history and the price variations of different cryptocurrencies.",
         tags: [
             {
                 name: "HTML",
@@ -202,7 +202,7 @@ const projects = [
     {
         name: "Martial Geeks",
         description:
-            "Sitio Web E-commerce para tienda de artículos de artes marciales. Con registro de usuario, carrito persistente y se simula el flujo de compra del usuario",
+            "E-commerce website for a martial arts gear store. Features include user registration, a persistent shopping cart, and a simulated user purchase flow.",
         tags: [
             {
                 name: "React",
