@@ -48,7 +48,7 @@ const Contact = () => {
           </label>
           <button
             type='submit'
-            className='bg-blue-darker py-3 px-8 outline-none w-fit text-gray-light font-special self-end font-bold shadow-md shadow-primary rounded-xl'
+            className='bg-blue-darker py-3 px-8 outline-none w-fit text-gray-light font-special self-end font-bold shadow-md shadow-primary rounded-xl hover:opacity-90 hover:shadow-lg'
           >
             Send
           </button>
