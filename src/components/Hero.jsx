@@ -36,8 +36,8 @@ const Hero = () => {
             <div className='absolute  w-[150px] h-[150px] -top-10 right-0 bg-gradient-to-br from-orange-darker via-orange-dark to-orange-light-light  shadow-2xl rounded-full  motion-safe:animate-pulse'></div>
             <div className='absolute  w-[100px] h-[100px] top-60 -right-20 bg-gradient-to-br  from-yellow-dark to-yellow-light  shadow-2xl rounded-full  animate-pulse'></div>
             <div className='absolute  w-[100px] h-[100px] top-60 -right-20 bg-gradient-to-br  from-yellow-dark to-yellow-light  shadow-2xl rounded-full  animate-pulse'></div>
-            <div className={` w-[80%] sm:w-[50%] md:w-full  rounded-b-[25%] flex`}  >
-              <img src={bkPortada} alt="Foto de Beyker Estrada" className='translate-y-6' />
+            <div className={` w-[80%] sm:w-[40%] md:w-full  rounded-b-[25%] flex`}  >
+              <img src={bkPortada} alt="Foto de Beyker Estrada" className='translate-y-6  ' />
             </div>
           </div>
         </div>

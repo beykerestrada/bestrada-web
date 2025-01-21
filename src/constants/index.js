@@ -18,7 +18,8 @@ import {
     martial_geeks,
     exchange,
     sagaIdiomas, 
-    pastorino
+    pastorino,
+    gasti
 } from '../assets/projects'
 
 import {
@@ -130,6 +131,31 @@ const technologies = [
 ]
 
 const projects = [
+    {
+        name: "Gasti.pro Landing page",
+        description:
+            "Gasti is an innovative tool for managing your personal finances. ",
+        tags: [
+            {
+                name: "React",
+                color: "text-blue-light",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "text-orange-darker",
+            },
+            {
+                name: "TypeScript",
+                color: "text-blue-light",
+            },
+            {
+                name: "Vite",
+                color: "text-yellow-dark",
+            },
+        ],
+        image: gasti,
+        deploy_link: "https://gasti.pro"
+    },
     {
         name: "Pastorino Law Firm",
         description:
