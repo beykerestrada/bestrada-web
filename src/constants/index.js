@@ -15,9 +15,9 @@ import {
 } from '../assets/tech'
 
 import {
-    martial_geeks,
-    exchange,
-    sagaIdiomas, 
+    kamikaze,
+    comentalibros,
+    devlopia,
     pastorino,
     gasti
 } from '../assets/projects'
@@ -102,9 +102,9 @@ const technologies = [
         name: "React JS",
         icon: reactjs,
     },
-    
+
     {
-        
+
         name: "Vite",
         icon: vite,
     },
@@ -132,9 +132,33 @@ const technologies = [
 
 const projects = [
     {
-        name: "Gasti.pro Landing page",
+        name: "DevLopia",
+        description: "(In progress) DevLopia is a company specializing in helping growing startups scale their operations efficiently.",
+        tags: [
+            {
+                name: "React",
+                color: "text-blue-light",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "text-orange-darker",
+            },
+            {
+                name: "JavaScript",
+                color: "text-blue-light",
+            },
+            {
+                name: "Vite",
+                color: "text-yellow-dark",
+            },
+        ],
+        image: devlopia,
+        deploy_link: "https://devlopia.com/"
+    },
+    {
+        name: "Gasti.pro Home page",
         description:
-            "Gasti is an innovative tool for managing your personal finances. ",
+            "Gasti is an innovative tool that leverages WhatsApp to simplify the process of managing your personal finances. ",
         tags: [
             {
                 name: "React",
@@ -156,10 +180,34 @@ const projects = [
         image: gasti,
         deploy_link: "https://gasti.pro"
     },
+
     {
-        name: "Pastorino Law Firm",
-        description:
-            "Informational website for a law firm based in Buenos Aires, Argentina.",
+        name: "ComentaLibros",
+        description: "(In progress) Social media for shering book reviews and reading lists.",
+        tags: [
+            {
+                name: "React",
+                color: "text-blue-light",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "text-orange-darker",
+            },
+            {
+                name: "TypeScript",
+                color: "text-blue-light",
+            },
+            {
+                name: "Vite",
+                color: "text-yellow-dark",
+            },
+        ],
+        image: comentalibros,
+        deploy_link: "https://comentalibros.com/"
+    },
+    {
+        name: "Kamikaze Soluciones",
+        description: "Kamikaze is a company specializing in electronics and 3D modeling.",
         tags: [
             {
                 name: "React",
@@ -178,78 +226,8 @@ const projects = [
                 color: "text-yellow-dark",
             },
         ],
-        image: pastorino,
-        deploy_link: "https://pastorino.netlify.app/"
-    },
-    {
-        name: "SagaIdiomas",
-        description:
-            "Static informational website for an online language learning school.",
-        tags: [
-            {
-                name: "HTML",
-                color: "text-orange-dark",
-            },
-            {
-                name: "SCSS",
-                color: "text-blue-light",
-            },
-            {
-                name: "Bootstrap",
-                color: "text-blue-light",
-            },
-        ],
-        image: sagaIdiomas,
-        deploy_link: "https://beykerestrada.github.io/sagaidiomas-coderhouse/",
-        source_code_link: "https://github.com/beykerestrada/sagaidiomas-coderhouse",
-    },
-    {
-        name: "Crypto Exchange",
-        description:
-            "Cryptocurrency exchange simulator where users can perform various actions such as depositing, buying, selling, withdrawing, and viewing their transaction history and the price variations of different cryptocurrencies.",
-        tags: [
-            {
-                name: "HTML",
-                color: "text-orange-darker",
-            },
-            {
-                name: "CSS",
-                color: "text-blue-light",
-            },
-            {
-                name: "JavaScript",
-                color: "text-yellow-dark",
-            },
-        ],
-        image: exchange,
-        source_code_link: "https://github.com/beykerestrada/Simulador-ExchangeCripto",
-        deploy_link: "https://beykerestrada.github.io/Simulador-ExchangeCripto/"
-    },
-    {
-        name: "Martial Geeks",
-        description:
-            "E-commerce website for a martial arts gear store. Features include user registration, a persistent shopping cart, and a simulated user purchase flow.",
-        tags: [
-            {
-                name: "React",
-                color: "text-blue-light",
-            },
-            {
-                name: "SCSS",
-                color: "text-orange-darker",
-            },
-            {
-                name: "JavaScript",
-                color: "text-blue-light",
-            },
-            {
-                name: "Firebase",
-                color: "text-yellow-dark",
-            },
-        ],
-        image: martial_geeks,
-        source_code_link: "https://github.com/beykerestrada/martial-geeks",
-        deploy_link: "https://martialgeeks.netlify.app/"
+        image: kamikaze,
+        deploy_link: "https://kamikazesoluciones.netlify.app/"
     },
 
 ];
