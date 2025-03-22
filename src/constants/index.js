@@ -183,7 +183,7 @@ const projects = [
 
     {
         name: "ComentaLibros",
-        description: "(In progress) Social media for shering book reviews and reading lists.",
+        description: "(In progress) Social media for sharing book reviews and reading lists.",
         tags: [
             {
                 name: "React",
